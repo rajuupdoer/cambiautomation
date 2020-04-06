@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SampleTest]">
+  <test thread-count="5" name="CambiTest1(failed)">
+    <classes>
+      <class name="com.cambi.testscript.LoginTest">
+        <methods>
+          <include name="verifyprofilepage"/>
+          <include name="verifyHomePageAndElements"/>
+          <include name="verifyTapOnNotificationicon"/>
+          <include name="changePasswordFunctionality"/>
+          <include name="tearDownSuite"/>
+          <include name="verifyEditProfileElements"/>
+          <include name="afterMainMethod"/>
+          <include name="verifySignupForLoyalty"/>
+          <include name="appiumSetUp"/>
+          <include name="verifyBackMyCardPage"/>
+          <include name="verifyCardDetailsBox"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.cambi.testscript.LoginTest -->
+    </classes>
+  </test> <!-- CambiTest1(failed) -->
+  <test thread-count="5" name="CambiTest2(failed)">
+    <classes>
+      <class name="com.cambi.testscript.SignUpTest">
+        <methods>
+          <include name="SignUp"/>
+          <include name="verifyDifferentTextCharacter"/>
+          <include name="tearDownSuite"/>
+          <include name="afterMainMethod"/>
+          <include name="appiumSetUp"/>
+          <include name="verifyMinimumCharacter"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.cambi.testscript.SignUpTest -->
+    </classes>
+  </test> <!-- CambiTest2(failed) -->
+</suite> <!-- Failed suite [SampleTest] -->

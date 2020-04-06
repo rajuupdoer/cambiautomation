@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SampleTest" annotations="JDK">
+
+	<test name="CambiTest1"  junit="false" preserve-order="true">		
+		<classes>	
+			<class name="com.cambi.testscript.LoginTest">
+				<methods>
+					<include name="LoginByPhoneNumber"/>
+					<include name="LoginWithInvalidPhoneNumber"/>
+					<include name="verifyInvalidNumberResetPassword"/>
+					<include name="verifyHomePageAndElements"/>
+					<include name="verifyStoreSearchFeature"/>
+					<include name="settings"/>
+					<include name="verifyprofilepage"/>
+					<include name="verifyEditProfileElements"/>
+					<include name="editProfileFunctionality"/>		
+					<include name="verifyTermsAndCondition"/>	
+					<include name="verifyPrivacyPolicy"/>	
+					<include name="verifyLogOut"/>	
+					<include name="verifySignupForLoyalty"/>
+					<include name="verifyStoreAlreadyRegisteredForLoyaltyProgram"/>
+					<include name="verifyHistoryPage"/>
+					<include name="verifyHistoryFunctionality"/>
+					<include name="verifyTransactionsHistory"/>
+					<include name="verifyNotificationicon"/>	
+					<include name="verifyTapOnNotificationicon"/>	
+					<include name="verifyMyCardPage"/>	
+					<include name="verifyBackMyCardPage"/>	
+					<include name="verifyCardDetailsBox"/>	
+					<include name="changePasswordFunctionality"/>
+				</methods>
+			</class>	
+		</classes>
+	</test>
+	<test name="CambiTest2"  junit="false" preserve-order="true">
+	<classes>		
+			<class name="com.cambi.testscript.SignUpTest">
+				<methods>
+					<include name="SignUp"/>
+					<include name="verifyMinimumCharacter"/>
+					<include name="verifyDifferentTextCharacter"/>
+				</methods>
+				</class>
+				</classes>
+		</test>
+</suite> 

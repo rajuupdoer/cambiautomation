@@ -1,0 +1,1053 @@
+<html>
+<head>
+<title>TestNG:  CambiTest1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CambiTest1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 03 14:17:21 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>2343 seconds (2343153 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.changePasswordFunctionality()'><b>changePasswordFunctionality</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-611289995" onClick='toggleBox("Output-611289995", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-611289995" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-611289995">
+</br>Verify Change Password functionality on Profile page<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.80 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-2SEFOJD&apos;, ip: &apos;192.168.43.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.cambi, statBarHeight=78, viewportRect={top=78, left=0, width=1080, height=2053}, deviceName=5200459f4e5c8625, platform=LINUX, deviceUDID=5200459f4e5c8625, desired={app=D:\consumer-dev-2020-01-29.apk, appPackage=io.cambi, platformVersion=10, appWaitActivity=io.cambi.activities.*, autoGrantPermissions=true, platformName=Android, udid=5200459f4e5c8625, deviceName=Galaxy M30, –full-reset=true}, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=5200459f4e5c8625, deviceApiLevel=29, deviceManufacturer=samsung, –full-reset=true, app=D:\consumer-dev-2020-01-29.apk, deviceScreenSize=1080x2340, networkConnectionEnabled=true, warnings={}, appWaitActivity=io.cambi.activities.*, databaseEnabled=false, pixelRatio=2.625, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=420, deviceModel=SM-M305F}]
+Session ID: 4446dfb8-9a83-44a5-aa8f-58cd9c1f39bd
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[@index=&apos;10&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.cambi.selenium.framework.BasePage.clickOn(BasePage.java:107)
+	at com.cambi.pages.ProfilePage.enterUpdatePasswordfield(ProfilePage.java:189)
+	at com.cambi.testscript.LoginTest.changePasswordFunctionality(LoginTest.java:405)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace611289995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace611289995'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.80 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-2SEFOJD&apos;, ip: &apos;192.168.43.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.cambi, statBarHeight=78, viewportRect={top=78, left=0, width=1080, height=2053}, deviceName=5200459f4e5c8625, platform=LINUX, deviceUDID=5200459f4e5c8625, desired={app=D:\consumer-dev-2020-01-29.apk, appPackage=io.cambi, platformVersion=10, appWaitActivity=io.cambi.activities.*, autoGrantPermissions=true, platformName=Android, udid=5200459f4e5c8625, deviceName=Galaxy M30, –full-reset=true}, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=5200459f4e5c8625, deviceApiLevel=29, deviceManufacturer=samsung, –full-reset=true, app=D:\consumer-dev-2020-01-29.apk, deviceScreenSize=1080x2340, networkConnectionEnabled=true, warnings={}, appWaitActivity=io.cambi.activities.*, databaseEnabled=false, pixelRatio=2.625, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=420, deviceModel=SM-M305F}]
+Session ID: 4446dfb8-9a83-44a5-aa8f-58cd9c1f39bd
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[@index=&apos;10&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.cambi.selenium.framework.BasePage.clickOn(BasePage.java:107)
+	at com.cambi.pages.ProfilePage.enterUpdatePasswordfield(ProfilePage.java:189)
+	at com.cambi.testscript.LoginTest.changePasswordFunctionality(LoginTest.java:405)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>72</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyBackMyCardPage()'><b>verifyBackMyCardPage</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-588449070" onClick='toggleBox("Output-588449070", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-588449070" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-588449070">
+</br>To Verify Back button and search functionality on My Cards page, <br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: The element &apos;By.xpath: //android.widget.ImageButton[@content-desc=&apos;Navigate up&apos;]&apos; does not exist in DOM anymore
+	at io.appium.uiautomator2.model.KnownElements.restoreCachedElement(KnownElements.java:103)
+	at io.appium.uiautomator2.model.KnownElements.getElementFromCache(KnownElements.java:122)
+	at io.appium.uiautomator2.handler.Click.safeHandle(Click.java:35)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:919)
+ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 565 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-2SEFOJD&apos;, ip: &apos;192.168.43.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.cambi, statBarHeight=78, viewportRect={top=78, left=0, width=1080, height=2053}, deviceName=5200459f4e5c8625, platform=LINUX, deviceUDID=5200459f4e5c8625, desired={app=D:\consumer-dev-2020-01-29.apk, appPackage=io.cambi, platformVersion=10, appWaitActivity=io.cambi.activities.*, autoGrantPermissions=true, platformName=Android, udid=5200459f4e5c8625, deviceName=Galaxy M30, –full-reset=true}, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=5200459f4e5c8625, deviceApiLevel=29, deviceManufacturer=samsung, –full-reset=true, app=D:\consumer-dev-2020-01-29.apk, deviceScreenSize=1080x2340, networkConnectionEnabled=true, warnings={}, appWaitActivity=io.cambi.activities.*, databaseEnabled=false, pixelRatio=2.625, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=420, deviceModel=SM-M305F}]
+Session ID: 14aa6078-2f6e-4cfe-b42a-ee66733f5ebd
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.cambi.selenium.framework.BasePage.clickOn(BasePage.java:107)
+	at com.cambi.pages.MyCardsPage.tapOnbackBttn(MyCardsPage.java:74)
+	at com.cambi.testscript.LoginTest.verifyBackMyCardPage(LoginTest.java:739)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace588449070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace588449070'><pre>org.openqa.selenium.StaleElementReferenceException: io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: The element &apos;By.xpath: //android.widget.ImageButton[@content-desc=&apos;Navigate up&apos;]&apos; does not exist in DOM anymore
+	at io.appium.uiautomator2.model.KnownElements.restoreCachedElement(KnownElements.java:103)
+	at io.appium.uiautomator2.model.KnownElements.getElementFromCache(KnownElements.java:122)
+	at io.appium.uiautomator2.handler.Click.safeHandle(Click.java:35)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:919)
+ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 565 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-2SEFOJD&apos;, ip: &apos;192.168.43.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.cambi, statBarHeight=78, viewportRect={top=78, left=0, width=1080, height=2053}, deviceName=5200459f4e5c8625, platform=LINUX, deviceUDID=5200459f4e5c8625, desired={app=D:\consumer-dev-2020-01-29.apk, appPackage=io.cambi, platformVersion=10, appWaitActivity=io.cambi.activities.*, autoGrantPermissions=true, platformName=Android, udid=5200459f4e5c8625, deviceName=Galaxy M30, –full-reset=true}, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=5200459f4e5c8625, deviceApiLevel=29, deviceManufacturer=samsung, –full-reset=true, app=D:\consumer-dev-2020-01-29.apk, deviceScreenSize=1080x2340, networkConnectionEnabled=true, warnings={}, appWaitActivity=io.cambi.activities.*, databaseEnabled=false, pixelRatio=2.625, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=420, deviceModel=SM-M305F}]
+Session ID: 14aa6078-2f6e-4cfe-b42a-ee66733f5ebd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.cambi.selenium.framework.BasePage.clickOn(BasePage.java:107)
+	at com.cambi.pages.MyCardsPage.tapOnbackBttn(MyCardsPage.java:74)
+	at com.cambi.testscript.LoginTest.verifyBackMyCardPage(LoginTest.java:739)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>35</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyCardDetailsBox()'><b>verifyCardDetailsBox</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1645624121" onClick='toggleBox("Output-1645624121", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1645624121" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1645624121">
+</br>To Verify cards details box, <br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+	at androidx.test.uiautomator.UiObject2.getAccessibilityNodeInfo(UiObject2.java:647)
+	at androidx.test.uiautomator.UiObject2.getVisibleBounds(UiObject2.java:213)
+	at androidx.test.uiautomator.UiObject2.getVisibleCenter(UiObject2.java:264)
+	at androidx.test.uiautomator.UiObject2.click(UiObject2.java:356)
+	at io.appium.uiautomator2.model.UiObject2Element.click(UiObject2Element.java:69)
+	at io.appium.uiautomator2.handler.Click.safeHandle(Click.java:39)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:919)
+ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-2SEFOJD&apos;, ip: &apos;192.168.43.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.cambi, statBarHeight=78, viewportRect={top=78, left=0, width=1080, height=2053}, deviceName=5200459f4e5c8625, platform=LINUX, deviceUDID=5200459f4e5c8625, desired={app=D:\consumer-dev-2020-01-29.apk, appPackage=io.cambi, platformVersion=10, appWaitActivity=io.cambi.activities.*, autoGrantPermissions=true, platformName=Android, udid=5200459f4e5c8625, deviceName=Galaxy M30, –full-reset=true}, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=5200459f4e5c8625, deviceApiLevel=29, deviceManufacturer=samsung, –full-reset=true, app=D:\consumer-dev-2020-01-29.apk, deviceScreenSize=1080x2340, networkConnectionEnabled=true, warnings={}, appWaitActivity=io.cambi.activities.*, databaseEnabled=false, pixelRatio=2.625, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=420, deviceModel=SM-M305F}]
+Session ID: 8fdfeb2e-0be3-42b9-a563-ff64cca723af
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.cambi.selenium.framework.BasePage.clickOn(BasePage.java:107)
+	at com.cambi.pages.MyCardsPage.tapOnCard(MyCardsPage.java:91)
+	at com.cambi.testscript.LoginTest.verifyCardDetailsBox(LoginTest.java:798)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1645624121", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1645624121'><pre>org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+	at androidx.test.uiautomator.UiObject2.getAccessibilityNodeInfo(UiObject2.java:647)
+	at androidx.test.uiautomator.UiObject2.getVisibleBounds(UiObject2.java:213)
+	at androidx.test.uiautomator.UiObject2.getVisibleCenter(UiObject2.java:264)
+	at androidx.test.uiautomator.UiObject2.click(UiObject2.java:356)
+	at io.appium.uiautomator2.model.UiObject2Element.click(UiObject2Element.java:69)
+	at io.appium.uiautomator2.handler.Click.safeHandle(Click.java:39)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:919)
+ (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-2SEFOJD&apos;, ip: &apos;192.168.43.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.cambi, statBarHeight=78, viewportRect={top=78, left=0, width=1080, height=2053}, deviceName=5200459f4e5c8625, platform=LINUX, deviceUDID=5200459f4e5c8625, desired={app=D:\consumer-dev-2020-01-29.apk, appPackage=io.cambi, platformVersion=10, appWaitActivity=io.cambi.activities.*, autoGrantPermissions=true, platformName=Android, udid=5200459f4e5c8625, deviceName=Galaxy M30, –full-reset=true}, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=5200459f4e5c8625, deviceApiLevel=29, deviceManufacturer=samsung, –full-reset=true, app=D:\consumer-dev-2020-01-29.apk, deviceScreenSize=1080x2340, networkConnectionEnabled=true, warnings={}, appWaitActivity=io.cambi.activities.*, databaseEnabled=false, pixelRatio=2.625, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=420, deviceModel=SM-M305F}]
+Session ID: 8fdfeb2e-0be3-42b9-a563-ff64cca723af
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.cambi.selenium.framework.BasePage.clickOn(BasePage.java:107)
+	at com.cambi.pages.MyCardsPage.tapOnCard(MyCardsPage.java:91)
+	at com.cambi.testscript.LoginTest.verifyCardDetailsBox(LoginTest.java:798)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>37</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyEditProfileElements()'><b>verifyEditProfileElements</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-373097727" onClick='toggleBox("Output-373097727", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-373097727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-373097727">
+</br>To Verify edit profile elements<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Show Password button is not appearing did not expect to find [true] but found [false]
+	at com.cambi.pages.ProfilePage.verifyChangePasswordField(ProfilePage.java:147)
+	at com.cambi.testscript.LoginTest.verifyEditProfileElements(LoginTest.java:326)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace373097727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace373097727'><pre>java.lang.AssertionError: Show Password button is not appearing did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at com.cambi.pages.ProfilePage.verifyChangePasswordField(ProfilePage.java:147)
+	at com.cambi.testscript.LoginTest.verifyEditProfileElements(LoginTest.java:326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>70</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyHomePageAndElements()'><b>verifyHomePageAndElements</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1535026957" onClick='toggleBox("Output-1535026957", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1535026957" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1535026957">
+</br>Verify tap on the Hamburger menu<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Near By store page is not appearing did not expect to find [true] but found [false]
+	at com.cambi.pages.NearbyStoresPage.verifyNearByStoresPageTilte(NearbyStoresPage.java:40)
+	at com.cambi.testscript.LoginTest.verifyHomePageAndElements(LoginTest.java:87)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1535026957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1535026957'><pre>java.lang.AssertionError: Near By store page is not appearing did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at com.cambi.pages.NearbyStoresPage.verifyNearByStoresPageTilte(NearbyStoresPage.java:40)
+	at com.cambi.testscript.LoginTest.verifyHomePageAndElements(LoginTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>69</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifySignupForLoyalty()'><b>verifySignupForLoyalty</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-803893384" onClick='toggleBox("Output-803893384", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-803893384" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-803893384">
+</br>Verify Signup for Loyalty functionality<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Subscribe button is not appearing did not expect to find [true] but found [false]
+	at com.cambi.pages.SignupForLoyaltyPage.tapOnSignupForLoyalty(SignupForLoyaltyPage.java:28)
+	at com.cambi.testscript.LoginTest.verifySignupForLoyalty(LoginTest.java:518)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace803893384", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace803893384'><pre>java.lang.AssertionError: Subscribe button is not appearing did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at com.cambi.pages.SignupForLoyaltyPage.tapOnSignupForLoyalty(SignupForLoyaltyPage.java:28)
+	at com.cambi.testscript.LoginTest.verifySignupForLoyalty(LoginTest.java:518)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>66</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyTapOnNotificationicon()'><b>verifyTapOnNotificationicon</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-333693383" onClick='toggleBox("Output-333693383", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-333693383" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-333693383">
+</br>To Verify tap on the Notification icon on home screen, <br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Notification icon is not appearing did not expect to find [true] but found [false]
+	at com.cambi.pages.NotificationPage.vverifyNotificationPage(NotificationPage.java:44)
+	at com.cambi.testscript.LoginTest.verifyTapOnNotificationicon(LoginTest.java:686)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace333693383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace333693383'><pre>java.lang.AssertionError: Notification icon is not appearing did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at com.cambi.pages.NotificationPage.vverifyNotificationPage(NotificationPage.java:44)
+	at com.cambi.testscript.LoginTest.verifyTapOnNotificationicon(LoginTest.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>56</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyprofilepage()'><b>verifyprofilepage</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1658512704" onClick='toggleBox("Output-1658512704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1658512704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1658512704">
+</br>To Verify Profile page<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.46 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-2SEFOJD&apos;, ip: &apos;192.168.43.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.cambi, statBarHeight=78, viewportRect={top=78, left=0, width=1080, height=2053}, deviceName=5200459f4e5c8625, platform=LINUX, deviceUDID=5200459f4e5c8625, desired={app=D:\consumer-dev-2020-01-29.apk, appPackage=io.cambi, platformVersion=10, appWaitActivity=io.cambi.activities.*, autoGrantPermissions=true, platformName=Android, udid=5200459f4e5c8625, deviceName=Galaxy M30, –full-reset=true}, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=5200459f4e5c8625, deviceApiLevel=29, deviceManufacturer=samsung, –full-reset=true, app=D:\consumer-dev-2020-01-29.apk, deviceScreenSize=1080x2340, networkConnectionEnabled=true, warnings={}, appWaitActivity=io.cambi.activities.*, databaseEnabled=false, pixelRatio=2.625, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=420, deviceModel=SM-M305F}]
+Session ID: 27c72929-5260-4116-9abf-1807ce0eb2c9
+*** Element info: {Using=xpath, value=//android.widget.Button[@text=&apos;NO&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.cambi.selenium.framework.BasePage.waitForElement(BasePage.java:252)
+	at com.cambi.pages.HamburgerMenu.tapOnHamburgerMenu(HamburgerMenu.java:62)
+	at com.cambi.testscript.LoginTest.verifyprofilepage(LoginTest.java:280)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658512704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658512704'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.46 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-2SEFOJD&apos;, ip: &apos;192.168.43.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=io.cambi, statBarHeight=78, viewportRect={top=78, left=0, width=1080, height=2053}, deviceName=5200459f4e5c8625, platform=LINUX, deviceUDID=5200459f4e5c8625, desired={app=D:\consumer-dev-2020-01-29.apk, appPackage=io.cambi, platformVersion=10, appWaitActivity=io.cambi.activities.*, autoGrantPermissions=true, platformName=Android, udid=5200459f4e5c8625, deviceName=Galaxy M30, –full-reset=true}, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=5200459f4e5c8625, deviceApiLevel=29, deviceManufacturer=samsung, –full-reset=true, app=D:\consumer-dev-2020-01-29.apk, deviceScreenSize=1080x2340, networkConnectionEnabled=true, warnings={}, appWaitActivity=io.cambi.activities.*, databaseEnabled=false, pixelRatio=2.625, locationContextEnabled=false, autoGrantPermissions=true, deviceScreenDensity=420, deviceModel=SM-M305F}]
+Session ID: 27c72929-5260-4116-9abf-1807ce0eb2c9
+*** Element info: {Using=xpath, value=//android.widget.Button[@text=&apos;NO&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.cambi.selenium.framework.BasePage.waitForElement(BasePage.java:252)
+	at com.cambi.pages.HamburgerMenu.tapOnHamburgerMenu(HamburgerMenu.java:62)
+	at com.cambi.testscript.LoginTest.verifyprofilepage(LoginTest.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>167</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.HamburgerMenu()'><b>HamburgerMenu</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-851912430" onClick='toggleBox("Output-851912430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-851912430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-851912430">
+</br>To verify the Hamburger menu options<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.LoginByPhoneNumber()'><b>LoginByPhoneNumber</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-2145896000" onClick='toggleBox("Output-2145896000", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2145896000" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2145896000">
+</br>To verify the app launch & Login Flow<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.LoginWithInvalidPhoneNumber()'><b>LoginWithInvalidPhoneNumber</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1272051933" onClick='toggleBox("Output-1272051933", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1272051933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1272051933">
+</br>To verify the app launch & Login Flow<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.buyGiftCard()'><b>buyGiftCard</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-837073696" onClick='toggleBox("Output-837073696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-837073696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-837073696">
+</br>To Verify buy gift card functionality<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.editProfileFunctionality()'><b>editProfileFunctionality</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1172535934" onClick='toggleBox("Output-1172535934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1172535934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1172535934">
+</br>To Verify edit profile functionality<br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.sendGiftCard()'><b>sendGiftCard</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-482307698" onClick='toggleBox("Output-482307698", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-482307698" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-482307698">
+</br>To Verify send gift card functionality<br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.settings()'><b>settings</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1574509514" onClick='toggleBox("Output-1574509514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1574509514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1574509514">
+</br>To Verify 'Location-based Notifications' switch button when it is OFF/ON<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyHistoryFunctionality()'><b>verifyHistoryFunctionality</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-538667887" onClick='toggleBox("Output-538667887", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-538667887" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-538667887">
+</br>To Verify History functionality<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyHistoryPage()'><b>verifyHistoryPage</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-212963786" onClick='toggleBox("Output-212963786", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-212963786" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-212963786">
+</br>To Verify History option under hamburger menu<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyLogOut()'><b>verifyLogOut</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-312168418" onClick='toggleBox("Output-312168418", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-312168418" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-312168418">
+</br>To Verify Log Out is working<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyMyCardPage()'><b>verifyMyCardPage</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1400973979" onClick='toggleBox("Output-1400973979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1400973979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1400973979">
+</br>To Verify My Card page, <br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyNotificationicon()'><b>verifyNotificationicon</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-93798665" onClick='toggleBox("Output-93798665", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-93798665" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-93798665">
+</br>To Verify notification icon on home screen, <br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyPrivacyPolicy()'><b>verifyPrivacyPolicy</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1182311147" onClick='toggleBox("Output-1182311147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1182311147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1182311147">
+</br>To Verify "Privacy Policy" link working<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyStoreAlreadyRegisteredForLoyaltyProgram()'><b>verifyStoreAlreadyRegisteredForLoyaltyProgram</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1338368149" onClick='toggleBox("Output-1338368149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1338368149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1338368149">
+</br>To Verify store already registered for loyalty program<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyStoreSearchFeature()'><b>verifyStoreSearchFeature</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-1543146693" onClick='toggleBox("Output-1543146693", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1543146693" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1543146693">
+</br>To verify the Store search feature<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyTermsAndCondition()'><b>verifyTermsAndCondition</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-694069884" onClick='toggleBox("Output-694069884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-694069884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-694069884">
+</br>To Verify "Terms and Condition" link working<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+<tr>
+<td title='com.cambi.testscript.LoginTest.verifyTransactionsHistory()'><b>verifyTransactionsHistory</b><br>Test class: com.cambi.testscript.LoginTest<br/>
+<a href="#Output-2078641942" onClick='toggleBox("Output-2078641942", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2078641942" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2078641942">
+</br>To Verify transactions history with date and points, <br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.cambi.testscript.LoginTest@25359ed8</td></tr>
+</table><p>
+</body>
+</html>
